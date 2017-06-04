@@ -1,0 +1,58 @@
+﻿@model EjemploDetalle.Models.CotizacionesDetalles
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>CotizacionesDetalles</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Cotizaciones.CotizacionId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Cotizaciones.CotizacionId)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Producto.Descripcion)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Producto.Descripcion)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Descripcion)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Descripcion)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Cantidad)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Cantidad)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Precio)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Precio)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.DetalleId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
